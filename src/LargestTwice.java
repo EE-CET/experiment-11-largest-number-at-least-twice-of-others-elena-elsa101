@@ -11,9 +11,10 @@ public class Main {
             nums[i] = sc.nextInt();
         }
 
-        int max = Integer.MIN_VALUE;
+        int max = -1;
         int index = -1;
 
+        // Find largest element and its index
         for (int i = 0; i < n; i++) {
             if (nums[i] > max) {
                 max = nums[i];
@@ -21,13 +22,14 @@ public class Main {
             }
         }
 
+        // Check condition
         for (int i = 0; i < n; i++) {
             if (i != index && max < 2 * nums[i]) {
-                System.out.println(-1);
+                System.out.print(-1);
                 return;
             }
         }
 
-        System.out.println(index);
+        System.out.print(index);
     }
 }
