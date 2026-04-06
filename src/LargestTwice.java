@@ -23,11 +23,11 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             if (i != index && max < 2 * nums[i]) {
-                System.out.print(-1);
+                System.out.println(-1);
                 return;
             }
         }
 
-        System.out.print(index);
+        System.out.println(index);
     }
 }
